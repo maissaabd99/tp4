@@ -1,0 +1,21 @@
+<h1>Correspondance Mois/Saison</h1>
+<p><h3>Donner un numéro du mois : <input type="number" name ="t1" #tt (keyup)="affiche($event)"/></h3>
+    <h4>Le mois {{val}} est dans
+     <ng-container [ngSwitch]=val>
+          
+         <p *ngSwitchCase=9>L'Automne</p>
+         <p *ngSwitchCase=10>L'Automne</p>
+         <p *ngSwitchCase=11>L'Automne</p>
+         <p *ngSwitchCase=12>L'Hiver</p>
+         <p *ngSwitchCase=1>L'Hiver</p>
+         <p *ngSwitchCase=2>L'Hiver</p>
+         <p *ngSwitchCase=3>Le Printemps</p>
+         <p *ngSwitchCase=4>Le Printemps</p>
+         <p *ngSwitchCase=5>Le Printemps</p>
+         <p *ngSwitchCase=6>L'été</p>
+         <p *ngSwitchCase=7>L'été</p>
+         <p *ngSwitchCase=8>L'été</p>
+      
+    </ng-container>
+</h4>
+

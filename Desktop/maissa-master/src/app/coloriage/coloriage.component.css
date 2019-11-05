@@ -1,0 +1,15 @@
+.ete { color:red;
+    background-color: yellow;
+    font-size: 24px;
+}
+
+.standard { color:blue;
+    background-color: rose;
+    font-size: 36px;
+}
+
+.sombre { color:gray;
+    background-color: magenta;
+    font-size: 28px;
+}
+   

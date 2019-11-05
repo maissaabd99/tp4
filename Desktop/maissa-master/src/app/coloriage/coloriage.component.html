@@ -1,0 +1,12 @@
+<h1 [ngClass]="theme">Coloriage</h1>
+<h3>couleur : <input type="text" [(ngModel)] = "coul"></h3>
+<select name="ss" [(ngModel)] = "poly">
+    <option [value]="t" *ngFor="let t of tab" value="{{t}}">{{t}}</option>
+</select>
+<button name="b" click="onchange()">Changer</button>
+ <span [ngStyle]="{color:couleur , 'font-family':police}">  Résultat </span>
+<h3>choix du thème :
+    <input type="radio" name="r" [(ngModel)] = "theme">Eté
+    <input type="radio" name="r" [(ngModel)] = "theme">Standard
+    <input type="radio" name="r" [(ngModel)] = "theme">Sombre
+</h3>
