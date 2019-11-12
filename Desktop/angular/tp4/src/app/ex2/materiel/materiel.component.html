@@ -1,0 +1,13 @@
+<h2 style="color:brown;text-align:center;">Listes des materiels</h2>
+<ul class="list-group">
+    <li *ngFor="let t of tab" [ngClass]="{'list-group-item':true,
+                                          'list-group-item-success': t.repare=='endommagé' }">
+     {{t.nom}} <br><br>
+ 
+      <img [src]="t.image" width="50px" height="50px"/> ||
+        Référence : {{t.reference}} ||
+        Prix : <input type="text" [value]="t.prix"> ||
+        Etat : {{t.repare}} |
+       <button *ngIf="t.repare == 'endommagé'"  (click)="t.repare='reparé'" class=" btn btn-success">Réparer</button>
+    </li>
+</ul>
